@@ -1,28 +1,64 @@
-#Container {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.Container {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 0;
+  flex-wrap: nowrap;
+}
+
+.Slide-Container {
+ display: flex;
+ flex-direction: row;
 }
 
 .Burguer {
+  left: 100%;
   width: 100%;
-  
+  position: absolute;
+  z-index: -2;
+  animation: all 1s ease;
 }
 
-#Uai {
-  right: 0px;
-  transition: all 1s ease-in-out;
+.Burguer.active {
+  z-index: -1;
+  left: 0;
+  animation: ativar 1s ease;
 }
-#Uai.current {
+
+.Burguer.active.desactive {
+  z-index: -1;
   right: 100%;
+  animation: desativar 1s ease-in-out;
 }
 
-@media only screen and (min-width: 768px) {
-  .Burguer {
-    position: absolute;
-    top: -150px;
-    width: 100%;
-    z-index: -1;
+@keyframes ativar {
+  0%{
+    opacity: 0;
+    left: 100%;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes desativar {
+  0%{
+    opacity: 1;
+    left: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    left: -100%;
   }
 }
