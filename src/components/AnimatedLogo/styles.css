@@ -1,0 +1,37 @@
+
+
+.On_Burguer_Svg{
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  stroke-width: 4;
+  stroke: #f6cc39;
+  position: relative;
+}
+.On_Burguer_Svg .burguer{
+  fill: white;
+  fill-opacity: 0;  
+}
+.On_Burguer_Svg .on{
+  fill: #f6cc39;
+  fill-opacity: 0;  
+}
+.On_Burguer_Svg .burguer.activate{
+  animation: animar 5s ease-in-out forwards;
+}
+.On_Burguer_Svg .on.activate{
+  animation: animar 4s ease-in-out forwards;
+}
+
+@keyframes animar {
+  0% {
+    fill-opacity: 0;
+  }
+  70%{
+    stroke-dashoffset: 0;
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dasharray: 600;
+  }
+}
