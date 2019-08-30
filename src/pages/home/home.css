@@ -5,33 +5,6 @@
   width: 100%;
 }
 
-.Slide-Container {
-  height: 62.5vw;
-  overflow-x: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-.Burguer {
-  left: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -2;
-  animation: all 1s ease;
-}
-
-.Burguer.active {
-  z-index: 0;
-  left: 0;
-  animation: ativar 1s ease;
-}
-
-.Burguer.active.desactive {
-  z-index: -1;
-  right: 100%;
-  animation: desativar 1s ease-in-out;
-}
-
 .Logo-Container {
   z-index: 1;
   display: flex;
@@ -40,37 +13,51 @@
   transform: translate(15%, 25px);
 }
 
-@keyframes ativar {
-  0%{
-    opacity: 0;
-    left: 100%;
-  }
-  70%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 1;
-    left: 0;
-  }
+.Description-Container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  right: 3%;
+  top: 20%;
+  color: white;
+  text-align: end;
 }
-@keyframes desativar {
-  0%{
-    opacity: 1;
-    left: 0;
-  }
-  70%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    left: -100%;
-  }
+.Description-Container .Title {
+  font-family: 'Alfa Slab One';
+  font-size: 4vw;
+}
+.Description-Container .Title.below {
+  margin-top: 15px;
+}
+.Description-Container .Sub-Title {
+  font-family: 'Cormorant Garamond';
+  font-weight: 600;
+  font-size: 2vw;
 }
 
 @media only screen and ( max-width: 425px ) {
   .Logo-Container {
-    width: 50%;
-    transform: translate(15%, 40px);
+    width: 45%;
+    transform: translate(3%, 30px);
+  }
+  .Description-Container .Title {
+    font-size: 5vw;
+  }
+  .Description-Container .Sub-Title {
+    font-weight: bold;
+    font-size: 3.5vw;
+    max-width: 180px;
+  }
+}
+@media only screen and ( max-width: 768px ) {
+  .Logo-Container {
+    width: 45%;
+    transform: translate(3%, 30px);
+  }
+  .Description-Container {
+    max-width: 300px;
   }
 }
 @media only screen and ( min-width: 768px ) {
