@@ -1,11 +1,10 @@
-
-
 .On_Burguer_Svg{
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
   stroke-width: 4;
   stroke: #f6cc39;
-  position: relative;
+  position: absolute;
+  transform: translate(-25% , 120%);
 }
 .On_Burguer_Svg .burguer{
   fill: white;
@@ -21,7 +20,6 @@
 .On_Burguer_Svg .on.activate{
   animation: animar 4s ease-in-out forwards;
 }
-
 @keyframes animar {
   0% {
     fill-opacity: 0;
@@ -33,5 +31,107 @@
   100% {
     fill-opacity: 1;
     stroke-dasharray: 600;
+  }
+}
+
+
+.Burguer_Svg{
+  position: absolute;
+  width: 70%;
+  fill: white;
+  fill-opacity: 0;
+  stroke-width: 4;
+  stroke: #f6cc39;
+}
+.Burguer_Svg .Bottom-Part{
+  transform: translateY(340px);
+}
+
+.Burguer_Svg .Top-Part .Vetor_Artesanal{
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
+  stroke-width: 2;
+}
+.Burguer_Svg .Top-Part .Top_Burguer{
+  stroke-dasharray: 1060;
+  stroke-dashoffset: 1060;
+}
+.Burguer_Svg .Bottom-Part .Since_2019{
+  stroke-dasharray: 105;
+  stroke-dashoffset: 105;
+  stroke-width: 3;
+}
+.Burguer_Svg .Bottom-Part .Bottom_Burguer{
+  stroke-dasharray: 980;
+  stroke-dashoffset: 980;
+}
+
+.Burguer_Svg .Top-Part .Vetor_Artesanal.activate{
+  animation: Vetor_Artesanal 8s ease-in-out forwards;
+}
+.Burguer_Svg .Top-Part .Top_Burguer.activate{
+  animation: Top_Burguer 8s ease-in-out forwards;
+}
+.Burguer_Svg .Bottom-Part .Since_2019.activate{
+  animation: Since_2019 8s ease-in-out forwards;
+}
+.Burguer_Svg .Bottom-Part .Bottom_Burguer.activate{
+  animation: Bottom_Burguer 8s ease-in-out forwards;
+}
+
+@keyframes Vetor_Artesanal {
+  0%{
+    fill-opacity: 0;
+    stroke-dashoffset: 110;
+  }
+  30%{
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  100%{
+    fill-opacity: 1;
+    stroke-dashoffset: 110;
+  }
+}
+@keyframes Top_Burguer {
+  0%{
+    fill-opacity: 0;
+    stroke-dashoffset: 1060;
+  }
+  30%{
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  100%{
+    fill-opacity: 1;
+    stroke-dashoffset: 1060;
+  }
+}
+@keyframes Since_2019 {
+  0%{
+    fill-opacity: 0;
+    stroke-dashoffset: 105;
+  }
+  30%{
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  100%{
+    fill-opacity: 1;
+    stroke-dashoffset: 105;
+  }
+}
+@keyframes Bottom_Burguer {
+  0%{
+    fill-opacity: 0;
+    stroke-dashoffset: 980;
+  }
+  30%{
+    fill-opacity: 0;
+    stroke-dashoffset: 0;
+  }
+  100%{
+    fill-opacity: 1;
+    stroke-dashoffset: 980;
   }
 }
