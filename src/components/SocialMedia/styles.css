@@ -1,0 +1,32 @@
+
+.Social-Container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+.Social-Container .Separator {
+  width: 1px;
+  height: 25px;
+  background-color: #FFFFFF;
+}
+.Social-Container .Social-Ico {
+  width: 20px;
+  margin: 5px 10px;
+}
+
+@media only screen and ( min-width: 1024px ){
+  .Social-Container .Social-Ico {
+    width: 30px;
+  }
+  .Social-Container .Separator {
+    height: 35px;
+  }
+}
+
+@media only screen and ( max-width: 425px ) {
+  .Social-Container {
+    margin-top: 6px;
+  }
+}
