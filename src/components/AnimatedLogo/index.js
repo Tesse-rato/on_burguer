@@ -5,7 +5,7 @@ import Burguer from './burguer.svg.js';
 
 export default function ({ style }) {
   return (
-    <div style={{ width: '75%', maxWidth: '670px', left: '25%', position: 'relative', ...style }} >
+    <div style={{ transform: 'translateX(27%)', width: '100%', maxWidth: '700px', ...style }} >
       <Burguer />
       <OnBurguer />
     </div>

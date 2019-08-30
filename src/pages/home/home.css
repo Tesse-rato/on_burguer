@@ -1,18 +1,15 @@
-*{
-  padding: 0;
-  margin: 0;
-}
-
-.Container {
+.Container {  
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
 }
 
 .Slide-Container {
- display: flex;
- flex-direction: row;
+  height: 62.5vw;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 .Burguer {
@@ -24,7 +21,7 @@
 }
 
 .Burguer.active {
-  z-index: -1;
+  z-index: 0;
   left: 0;
   animation: ativar 1s ease;
 }
@@ -35,10 +32,12 @@
   animation: desativar 1s ease-in-out;
 }
 
-.Animated-Div{
-  position: absolute;
-  margin-top: 10%;
-  width: 50%;
+.Logo-Container {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  width: 70%;
+  transform: translate(15%, 25px);
 }
 
 @keyframes ativar {
@@ -65,5 +64,23 @@
   100%{
     opacity: 0;
     left: -100%;
+  }
+}
+
+@media only screen and ( max-width: 425px ) {
+  .Logo-Container {
+    width: 50%;
+    transform: translate(15%, 40px);
+  }
+}
+@media only screen and ( min-width: 768px ) {
+  .Logo-Container {
+    transform: translate(10%, 60px);
+    width: 55%;
+  }
+}
+@media only screen and ( min-width: 1024px ) {
+  .Logo-Container {
+    transform: translate( 5%, 65px);
   }
 }

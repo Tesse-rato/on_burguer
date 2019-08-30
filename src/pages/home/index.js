@@ -22,7 +22,8 @@ export default class Home extends Component {
       });
   
     }
-   */
+*/
+
 
   componentDidMount() {
     const img1 = document.getElementById("img-burguer");
@@ -34,31 +35,43 @@ export default class Home extends Component {
       img1.classList.add('desactive');
       img2.classList.add('active');
       setTimeout(() => {
+        img1.classList.remove('desactive');
+        img1.classList.remove('active');
         img2.classList.add('desactive');
         img3.classList.add('active');
         setTimeout(() => {
+          img2.classList.remove('desactive');
+          img2.classList.remove('active');
           img3.classList.add('desactive');
           img4.classList.add('active');
           setTimeout(() => {
+            img3.classList.remove('desactive');
+            img3.classList.remove('active');
             img4.classList.add('desactive');
-            img1.classList = 'Burguer active';
-            img2.classList = "Burguer";
-            img3.classList = "Burguer";
-            img4.classList = "Burguer";
+            img1.classList.add('active');
             this.componentDidMount();
+            setTimeout(() => {
+              img4.classList.remove('desactive');
+              img4.classList.remove('active');
+            }, 5000);
           }, 5000);
         }, 5000);
       }, 5000);
-    }, 10000);
+    }, 8000);
 
   }
-
   render() {
     return (
       <div className="Container" >
+        {/*
+      */}
+
+        <div className="Logo-Container" >
+          <AnimatedLogo />
+        </div>
+
         <Header />
 
-        <AnimatedLogo style={{ top: '5vw', width: '50%' }} />
         <div className="Slide-Container">
           <img alt="Nao foi possivel carregar" id="img-burguer" src={ImageHeader} className="Burguer active" />
           <img alt="Nao foi possivel carregar" id="img-burguer2" src={ImageHeader2} className="Burguer" />
