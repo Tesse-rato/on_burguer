@@ -35,6 +35,12 @@
   animation: desativar 1s ease-in-out;
 }
 
+.Animated-Div{
+  position: absolute;
+  margin-top: 10%;
+  width: 50%;
+}
+
 @keyframes ativar {
   0%{
     opacity: 0;

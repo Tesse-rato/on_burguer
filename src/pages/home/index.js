@@ -57,7 +57,8 @@ export default class Home extends Component {
     return (
       <div className="Container" >
         <Header />
-        <AnimatedLogo width="1000" transform="translate(80, 100)" />
+
+        <AnimatedLogo style={{ top: '5vw', width: '50%' }} />
         <div className="Slide-Container">
           <img alt="Nao foi possivel carregar" id="img-burguer" src={ImageHeader} className="Burguer active" />
           <img alt="Nao foi possivel carregar" id="img-burguer2" src={ImageHeader2} className="Burguer" />
