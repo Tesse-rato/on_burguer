@@ -4,10 +4,10 @@ import './header.css';
 
 //import Logo from '../../assets/onBurguer.png';
 //import UserSettings from '../../assets/man-user.svg';
-import UserLogin from '../../assets/enter.svg';
 //import UserLogout from '../../assets/exit.svg';
 //import FacebookIco from '../../assets/facebook.svg';
 //import IntagramIco from '../../assets/instagram.svg';
+import UserLogin from '../../assets/enter.svg';
 
 import ListIco from '../../assets/list.svg';
 import ShoppingBasket from '../../assets/shopping-cart.svg';
