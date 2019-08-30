@@ -1,0 +1,55 @@
+
+.Slide-Container {
+  height: 62.5vw;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.Burguer {
+  left: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  animation: all 3s ease;
+  filter: brightness(60%) blur(3px);
+}
+
+.Burguer.active {
+  z-index: 0;
+  left: 0;
+  animation: ativar 3s ease;
+}
+
+.Burguer.active.desactive {
+  z-index: -1;
+  right: 100%;
+  animation: desativar 3s ease-in-out;
+}
+
+@keyframes ativar {
+  0%{
+    opacity: 0;
+    left: 100%;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes desativar {
+  0%{
+    opacity: 1;
+    left: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    left: -100%;
+  }
+}
