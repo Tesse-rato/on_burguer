@@ -1,6 +1,6 @@
 .Container {  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   width: 100%;
 }
@@ -24,40 +24,17 @@
   color: white;
   text-align: end;
 }
-.Description-Container .Title {
-  font-family: 'Alfa Slab One';
-  font-size: 4vw;
-}
-.Description-Container .Title.below {
-  margin-top: 15px;
-}
-.Description-Container .Sub-Title {
-  font-family: 'Cormorant Garamond';
-  font-weight: 600;
-  font-size: 2vw;
-}
 
 @media only screen and ( max-width: 425px ) {
   .Logo-Container {
     width: 45%;
     transform: translate(3%, 30px);
   }
-  .Description-Container .Title {
-    font-size: 5vw;
-  }
-  .Description-Container .Sub-Title {
-    font-weight: bold;
-    font-size: 3.5vw;
-    max-width: 180px;
-  }
 }
 @media only screen and ( max-width: 768px ) {
   .Logo-Container {
     width: 45%;
     transform: translate(3%, 30px);
-  }
-  .Description-Container {
-    max-width: 300px;
   }
 }
 @media only screen and ( min-width: 768px ) {
