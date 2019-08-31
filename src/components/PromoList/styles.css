@@ -1,0 +1,60 @@
+.Promo-Container{
+  display: flex;
+  align-self: center;
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  top: -2vw;
+}
+
+.Image-Container {
+  position: relative;
+  z-index: 1;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.Image-Container .Promo-Image {
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  filter: brightness(40%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction:  column;
+}
+
+.Image-Container .Promo-Title {
+  color: white;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  top: 8%;
+  font-size: 3vw;
+  font-family: 'Alfa Slab One';
+}
+
+.Image-Container .Promo-Ingredients {
+  color: white;
+  position: absolute;
+  width: 85%;
+  text-align: end;
+  top: 35%;
+  font-size: 2vw;
+  right: 5%;
+}
+
+.Image-Container .Promo-Ingredients .Promo-Ingredient {
+  position: relative;
+  right: 5px;
+  margin-top: 2px;
+  font-family: sans-serif, Courier, monospace;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Image-Container .Promo-Ingredients .Promo-Ingredient {
+    font-size: 3vw;
+  } 
+}
