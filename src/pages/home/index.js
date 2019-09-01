@@ -7,6 +7,7 @@ import SliderHeader from '../../components/SliderHeader';
 import SocialMedia from '../../components/SocialMedia';
 import Description from '../../components/Descriptions';
 import PromoList from '../../components/PromoList';
+import ProductsDisplay from '../../components/ProductsDisplay';
 
 export default class Home extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class Home extends Component {
           </div>
         </SliderHeader>
         <PromoList />
+        <ProductsDisplay />
       </div>
     );
   }
