@@ -1,0 +1,223 @@
+.Categories-Container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 10vw;
+  max-width: 768px;
+  max-height: 70px;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Categories-Ico-Container {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  top: -4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Categories-Container .Categories-Ico-Container .Categories-Ico {
+  height: 100%;
+}
+
+.Products-Container .Highlighter {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  z-index: -1;
+  background: #f6cc39;
+  transition: all 300ms ease;
+}
+.Products-Container .Highlighter.burguer {
+  top: 0%;
+  left: 18%;
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+  animation: burguer 1s ease normal;
+}
+@keyframes burguer {
+  0%{
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  50% {
+    top: 100%;
+    left: 18%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 0%;
+    left: 18%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.Products-Container .Highlighter.burguer.expand {
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1px;
+  border-radius: 0%;
+  animation: burguerExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+}
+@keyframes burguerExpand {
+  0%{
+    top: 0%;
+    left: 18.1%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  50%{
+    top: 100%;
+    left: 18.1%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+}
+.Products-Container .Highlighter.baverages {
+  top: 0%;
+  left: 44.8%; /* 12% 44.6% 71.8%*/
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+  animation: baverages 1s ease;
+}
+@keyframes baverages {
+  0%{
+    top: 100%;
+    left: 0%; /* 12% 44.6% 71.8%*/
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  50%{
+    top: 100%;
+    left: 44.6%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 0%;
+    left: 44.8%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.Products-Container .Highlighter.baverages.expand {
+  width: 100%;
+  height: 1px;
+  left: 0% /* 2.5%*/;
+  top: 100%;
+  animation: baveragesExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+}
+@keyframes baveragesExpand {
+  0%{
+    top: 0%;
+    left: 44.6%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  50%{
+    top: 100%;
+    left: 44.6%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+}
+.Products-Container .Highlighter.fries {
+  top: 0%;
+  left: 72%;
+  width: 10%;
+  height: 100%;
+  border-radius: 50%;
+  animation: fries 1s ease;
+}
+@keyframes fries {
+  0%{
+    top: 100%;
+    left: 0%; /* 12% 44.6% 71.8%*/
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  50%{
+    top: 100%;
+    left: 71.8%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 0%;
+    left: 72%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.Products-Container .Highlighter.fries.expand {
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 1px;
+  border-radius: 0%;
+  animation: friesExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+}
+@keyframes friesExpand {
+  0%{
+    top: 0%;
+    left: 71.8%;
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  50%{
+    top: 100%;
+    left: 71.8%;
+    width: 10%;
+    height: 1px;
+    border-radius: 0%;
+  }
+  100%{
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    border-radius: 0%;
+  }
+}

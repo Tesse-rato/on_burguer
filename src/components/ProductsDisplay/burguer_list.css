@@ -1,0 +1,44 @@
+.List-Container {
+  position: absolute;
+  top: 10%;
+  width: 30%;
+  max-height: 1024px;
+  max-width: 240px;
+  top: -85%;
+  left: 38.352%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  display: inline;
+  transform: rotateZ(-90deg);
+}
+
+.List-Image {
+  width: 100%;
+  height: 100%;
+  max-width: 240px;
+  max-height: 240px;
+  transform: rotateZ(90deg);
+}
+/*
+@media only screen and (max-width: 1024px){
+  .List-Container {
+    max-height: 100vw;
+    top: -50%;
+  }
+}
+*/
+@media only screen and (max-width: 769px){
+  .List-Container {
+    top: -50%;
+    left: 35.352%;
+    max-height: 100vw;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .List-Container {
+    top: -35%;
+    left: 35.52%;
+  }
+}
