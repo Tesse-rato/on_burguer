@@ -21,7 +21,7 @@ export default function Categories() {
         highlighter.classList.remove(currentStateHighlighter);
         highlighter.classList.add(arg);
         currentStateHighlighter = arg;
-      }, 300);
+      }, 200);
     };
 
     baverages.addEventListener('click', () => updateClass('baverages'));

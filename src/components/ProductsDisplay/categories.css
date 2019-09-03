@@ -34,7 +34,7 @@
   border-radius: 2px;
   z-index: -1;
   background: #f6cc39;
-  transition: all 300ms ease;
+  transition: all 200ms cubic-bezier(0, 1, .99, 1);
 }
 .Products-Container .Highlighter.burguer {
   top: 0%;
@@ -42,7 +42,7 @@
   width: 10%;
   height: 100%;
   border-radius: 50%;
-  animation: burguer 1s ease normal;
+  animation: burguer 1500ms cubic-bezier(0, 1, .99, 1) normal;
 }
 @keyframes burguer {
   0%{
@@ -73,7 +73,7 @@
   width: 100%;
   height: 1px;
   border-radius: 0%;
-  animation: burguerExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+  animation: burguerExpand 200ms cubic-bezier(0, 1, .99, 1) normal;
 }
 @keyframes burguerExpand {
   0%{
@@ -104,7 +104,7 @@
   width: 10%;
   height: 100%;
   border-radius: 50%;
-  animation: baverages 1s ease;
+  animation: baverages 1500ms cubic-bezier(0, 1, .99, 1);
 }
 @keyframes baverages {
   0%{
@@ -134,7 +134,7 @@
   height: 1px;
   left: 0% /* 2.5%*/;
   top: 100%;
-  animation: baveragesExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+  animation: baveragesExpand 200ms cubic-bezier(0, 1, .99, 1) normal;
 }
 @keyframes baveragesExpand {
   0%{
@@ -165,7 +165,7 @@
   width: 10%;
   height: 100%;
   border-radius: 50%;
-  animation: fries 1s ease;
+  animation: fries 1500ms cubic-bezier(0, 1, .99, 1);
 }
 @keyframes fries {
   0%{
@@ -196,7 +196,7 @@
   width: 100%;
   height: 1px;
   border-radius: 0%;
-  animation: friesExpand 300ms cubic-bezier(0, 1, .99, 1) normal;
+  animation: friesExpand 200ms cubic-bezier(0, 1, .99, 1) normal;
 }
 @keyframes friesExpand {
   0%{
